@@ -1,0 +1,10 @@
+{
+  "name": "post-build-index-as-json",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-deploy-json-config": "^1.0.1",
+    "rsvp": "^4.8.5"
+  }
+}

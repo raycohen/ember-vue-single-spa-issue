@@ -1,0 +1,46 @@
+{
+  "name": "@polyglot-mf/root-config",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "webpack serve --mode=development --port 9000 --env isLocal",
+    "lint": "eslint src",
+    "test": "jest --passWithNoTests",
+    "format": "prettier --write './**'",
+    "build": "webpack --mode=production"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && eslint src"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@types/systemjs": "^6.1.1",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-important-stuff": "^1.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "jest-cli": "^27.3.1",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "webpack": "^5.62.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-config-single-spa": "^5.1.1",
+    "webpack-dev-server": "^4.4.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "harmon": "^1.4.4",
+    "http-proxy-middleware": "^2.0.6",
+    "single-spa": "^5.9.3",
+    "single-spa-layout": "^2.0.1"
+  }
+}
